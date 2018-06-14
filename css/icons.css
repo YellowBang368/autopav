@@ -1,0 +1,27 @@
+.social ul {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+ul {
+  display: block;
+}
+
+ul li {
+  display: inline;
+  list-style: none;
+  padding-right: 8px;
+}
+
+.fab {
+  font-size: 1.4em;
+  transition: 0.5s
+}
+
+.fab:hover {
+  cursor: pointer
+}
+.fa-vk {color: #45668e;}
+.fa-facebook {color: #3b5998;}
+.fa-odnoklassniki {color: #ed812b;}
+.fa-twitter {color: #1da1f2;}

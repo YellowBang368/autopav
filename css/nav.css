@@ -1,0 +1,26 @@
+.nav {
+  height: 60px;
+  background-color: #563d8e;
+  border-radius: 2px;
+  border-bottom: 1px solid #dddddd;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.95em;
+}
+
+.nav .container {
+  padding: 10px 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  color: #cbdde8 !important;
+  transition: .3s;
+}
+
+.nav-item a:hover {
+  color: #fff !important;
+  cursor: pointer;
+}

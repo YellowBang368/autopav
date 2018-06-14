@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.main-wrapper {
+  padding: 15px 0;
+}
