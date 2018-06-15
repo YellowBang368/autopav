@@ -12,7 +12,9 @@
   <link rel="stylesheet" type="text/css" href="css/call-us.css" >
   <link rel="stylesheet" type="text/css" href="css/main-photos.css" >
 
-  <!-- Yandex map -->
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
   <!-- Font awsome + bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -23,10 +25,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script>
+  <script type="text/javascript">
+
+    /* Слайдер */
     $(document).ready(function(){
       $('.slider').bxSlider();
     });
+
+    /* Плавное открытие divов. Divы с классом .hide открываются плавно */
+    $(document).ready(function() {
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.hide').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window + 200 > bottom_of_object ){
+                $(this).animate({'opacity':'1'},200);
+            }
+          });
+        });
+      });
   </script>
 
   <meta charset="utf-8"/>
@@ -63,9 +82,9 @@
     <div><img src="http://placehold.it/1700x600" /></div>
   </div>
 
-  <div>
+  <div class="hide">
     <ul>
-      <li class="slice">
+      <li class="slice hide">
         <div class="container">
           <img src="http://placehold.it/300x200" />
           <div class="slice-info">
@@ -76,7 +95,7 @@
           </div>
         </div>
       </li>
-      <li class="slice dark">
+      <li class="slice dark hide">
         <div class="container">
           <img src="http://placehold.it/300x200" />
           <div class="slice-info">
@@ -88,7 +107,7 @@
           </div>
         </div>
       </li>
-      <li class="slice">
+      <li class="slice hide">
         <div class="container">
           <img src="http://placehold.it/300x200" />
           <div class="slice-info">
@@ -102,7 +121,7 @@
     </ul>
   </div>
 
-  <div class="dark">
+  <div class="dark hide">
     <div class="container">
       <div class="row">
         <div style="width: 600px;">
@@ -122,10 +141,25 @@
     </div>
   </div>
 
-  <div class="photos-slice">
+  <div class="slice hide">
+    <div class='container'>
+      <h4 class="text-center big-margin-top">Производственная компания МДН-Пром</h4>
+      <p>
+        Компания «ПК МДН-Пром» специализируется на изготовлении широкой сферы металлоконструкций, уже более 12 лет успешно предоставляя свои услуги на отечественном и зарубежном рынках. Начиная со строительных лесов и вышек тура, мы расширили область нашей деятельности, постоянно развиваясь в новых направлениях и совершенствуя проторенные пути.
+      </p>
+      <p>
+        Так, на данный момент любой заказчик из любого региона или города России, будь то Москва, Екатеринбург, Краснодар или Новосибирск, может заказать самые редкие и сложные в плане производственного исполнения модели высотных подмостей, остановочных навесов и иных метизов на исключительно выгодных условиях и с доставкой в свой город! Оснащенные современным оборудованием заводские площадки компании «ПК МДН-Пром», на которых работает команда высококвалифицированных специалистов, позволяют качественно и быстро выполнять объемные заказы в сжатые сроки.
+      </p>
+      <p>
+        Благодаря грамотному руководству, в компании прослеживается четкое разделение функций, ответственность, командный дух и исполнительность, направленные на активное развитие фирмы в сфере производства и обслуживания клиентов. Таким образом, в нашей организации придерживаются политики приоритета желаний клиента, в связи с чем мы гарантируем не только производственный результат, но и предельно вежливое и внимательное отношение к каждому клиенту!
+      </p>
+    </div>
+  </div>
+
+  <div class="photos-slice hide">
     <div class="container">
       <h4 class="text-center">Наши работы</h4>
-      <ul class="text-center">
+      <ul class="text-center margin-top">
         <li><img src="http://placehold.it/200x150" /></li>
         <li><img src="http://placehold.it/200x150" /></li>
         <li><img src="http://placehold.it/200x150" /></li>

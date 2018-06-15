@@ -4,6 +4,10 @@
     color: #212529;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .row {
   margin: 0;
 }
@@ -12,10 +16,18 @@
   padding: 15px 0;
 }
 
+.hide {
+  opacity: 0;
+}
+
 .inline {
   display: inline;
 }
 
 .margin-top {
   margin-top: 20px;
+}
+
+.big-margin-top {
+  margin-top: 50px;
 }

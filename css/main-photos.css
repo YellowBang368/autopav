@@ -1,7 +1,7 @@
 .photos-slice {
   display: block;
   height: 450px;
-  
+
 }
 
 .photos-slice .container {
@@ -15,7 +15,7 @@
 }
 
 .photos-slice img {
-  border: 1px solid #a0a0a0;
+  border: 2px solid #dddddd;
 }
 
 .photos-slice img:hover {

@@ -21,6 +21,10 @@
   height: 700px;
 }
 
+.smaller {
+  min-height: 200px!important;
+}
+
 .slice h4 {
   border: none;
   font-size: 1.2em;
@@ -29,6 +33,7 @@
 }
 
 .slice img {
+  cursor: pointer;
   float: left;
   display: inline-block;
   width: 300px;
