@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/nav.css" >
   <link rel="stylesheet" type="text/css" href="css/grid.css" >
   <link rel="stylesheet" type="text/css" href="css/left-bar.css" >
   <link rel="stylesheet" type="text/css" href="css/footer.css" >
-  <link rel="stylesheet" type="text/css" href="css/content.css" >
+  <link rel="stylesheet" type="text/css" href="css/products.css" >
   <link rel="stylesheet" type="text/css" href="css/icons.css" >
   <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css" >
+  <link rel="stylesheet" type="text/css" href="css/main.css" >
+
+
+  <!-- Font awsome + bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans|PT+Sans+Narrow|Rubik|Ubuntu|Roboto|Lato" rel="stylesheet">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <!-- Обычный слайдер  https://bxslider.com/ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script>
+
   <meta charset="utf-8"/>
   <title>Автобсные остановки, Курилки, Навесы для автомобилей</title>
 </head>
 <body>
   <ul class="nav">
+    <a href="#"><h4 id="logo">MDN</h4></a>
     <div class="container">
       <li class="nav-item">
-        <a class="nav-link">Главная</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Продукция</a>
+        <a href="products.html" class="nav-link">Продукция</a>
       </li>
       <li class="nav-item">
         <a class="nav-link">Нестандартные решения</a>
@@ -45,31 +58,51 @@
       </li>
     </div>
   </ul>
-  <div class="fluid-container">
-    <div class="row">
-      <div class="col-2">
-        <div class="left-bar">
-
-        </div>
-      </div>
-      <div class="col-10">
-        <div class="main-wrapper">
-          <ul>
-            <li class="item">
-              <img class="item-img" src="http://placehold.it/300x200" />
-              <div class="item-info">
-                <h4>Автопавильон (остановка)</h4>
-                <hr />
-                <p class="item-desc">
-
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <div class="slider">
+    <div><img src="http://placehold.it/1700x600" /></div>
+    <div><img src="http://placehold.it/1700x600" /></div>
+    <div><img src="http://placehold.it/1700x600" /></div>
   </div>
+
+  <div>
+    <ul>
+      <li class="slice">
+        <div class="container">
+          <img src="http://placehold.it/300x200" />
+          <div class="slice-info">
+            <h4>Автопавильон (остановка)</h4>
+            <p>
+              Наша Производственная компания 5 лет на рынке производства автобусных остановок и мы освоили уже более чем 10 разновидностей павильонов. Наши конструкторы развивают нашу продукцию и создают Концепцию более стильных, надежных и прочных автобусных остановок. Наша компания хорошо себя зарекомендовала почти во всех уголках России и стран СНГ, и мы стали надежным продавцом и поставщиком павильонов автобусных. А также мы делаем монтаж наших остановок, демонтаж старых остановок и доставляем их нашим грузовым автотранспортом на место монтажа.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="slice dark">
+        <div class="container">
+          <img src="http://placehold.it/300x200" />
+          <div class="slice-info">
+            <h4>Курилка (павильон для курения)</h4>
+            <p>
+              На основе автобусных остановок мы изготавливаем павильоны для курения (Курилки) в уменьшенном по длине варианте, обшиваются стенки и крыши стеклом, калёным стеклом, сотовым поликарбонатом, оргстеклом или монолитным поликарбонатом в зависимости от требований заказчика!
+              Также наша компания ООО "МДН-Пром" осуществляет послегарантийное обслуживание павильонов для курения и автобусных павильонов (замена поликарбоната и стёкол, восстановление покрытия, замена отдельных металлических элементов остановок, курилок). Установка рекламных носителей на уже готовые автопавильоны или павильоны для курения (курилки). Осуществляем замену лавочек, установку урн, демонтаж непригодных остановок.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="slice">
+        <div class="container">
+          <img src="http://placehold.it/300x200" />
+          <div class="slice-info">
+            <h4>Автонавес (навес для автомобиля)</h4>
+            <p>
+              Автомобильный навес изготавливается из металлического каркаса профильной трубы, металлического уголка и крыша накрывается Сотовым поликарбонатом толщиной 6 мм либо же по индивидуальным требованиям заказчика возможно покрытие крыши профилированным листом, металлочерепицей, мягкой черепицей и многими другими видами различных черепиц. Возможно изготовление Автонавеса по стандартным нашим размерам, а также возможны размеры заказчика. К каждому потенциальному покупателю мы подходим индивидуально, что позволяет быстро и качественно решить те или иные вопросы!
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
   <footer>
     <div class="container">
       <div class="row">

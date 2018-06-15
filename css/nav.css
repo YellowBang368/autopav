@@ -7,6 +7,17 @@
   font-size: 0.95em;
 }
 
+#logo {
+  padding: 15px 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.nav a:hover {
+  text-decoration: none;
+}
+
 .nav .container {
   padding: 10px 0;
 }

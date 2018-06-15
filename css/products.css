@@ -1,0 +1,65 @@
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-wrapper ul {
+  display: list-item;
+  list-style: none!important;
+}
+
+.main-wrapper ul li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.item {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  padding: 0 0;
+  width: 100%;
+}
+
+.item img {
+  float: left;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 300px;
+}
+
+.item-info {
+  float: left;
+  width: calc(100% - 300px);
+  height: 200px;
+  display: inline-block;
+}
+
+.item-name {
+  font-family: "Lato", sans-serif;
+  margin-left: 20px;
+  margin-bottom: 0;
+  font-size: 1.1em;
+  color: #2f2c2a;
+  cursor: pointer;
+}
+
+.item-name:hover {
+  color: #005999;
+}
+
+.item-info hr {
+  width: 100%;
+  height: 1px;
+  margin: 5px 0;
+}
+
+.item-desc {
+  font-size: 0.9em;
+  height: 170px;
+  margin: 0 0;
+  margin-left: 15px;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+
+}
