@@ -17,7 +17,12 @@
   background: #f8f9fa;
 }
 
+.bigger {
+  height: 700px;
+}
+
 .slice h4 {
+  border: none;
   font-size: 1.2em;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 400;

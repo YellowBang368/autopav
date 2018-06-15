@@ -1,0 +1,18 @@
+.call-us-block {
+  margin-left: 0;
+  width: calc(100% - 600px);
+  height: inherit;
+  padding: 50px 50px;
+}
+
+.call-us-block h4 {
+  font-size: 1.3em;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.call-us-block input {
+}
+
+input:focus {
+  outline: none;
+}

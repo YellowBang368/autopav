@@ -1,0 +1,23 @@
+.photos-slice {
+  display: block;
+  height: 450px;
+  
+}
+
+.photos-slice .container {
+  padding: 20px 0;
+  padding-top: 40px;
+}
+
+.photos-slice h4 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.3em;
+}
+
+.photos-slice img {
+  border: 1px solid #a0a0a0;
+}
+
+.photos-slice img:hover {
+  cursor: pointer;
+}
