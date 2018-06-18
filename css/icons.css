@@ -21,6 +21,18 @@ ul li {
 .fab:hover {
   cursor: pointer
 }
+
+.fa-angrycreative {
+  color: white;
+  font-size: 10em;
+}
+
+.medal-svg {
+  padding-top: 35px;
+  width: 50%;
+  height: 50%;
+}
+
 .fa-vk {color: #45668e;}
 .fa-facebook {color: #3b5998;}
 .fa-odnoklassniki {color: #ed812b;}

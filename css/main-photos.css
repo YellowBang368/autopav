@@ -16,6 +16,8 @@
 
 .photos-slice img {
   border: 2px solid #dddddd;
+  width: 200px;
+  height: 150px;
 }
 
 .photos-slice img:hover {
